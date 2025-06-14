@@ -46,6 +46,10 @@ dotnet run
 > Le serveur sera généralement accessible via :
 >
 > * [https://localhost:7155](https://localhost:7155)
+>
+> Ou utiliser swagger pour tester l'API directement via :
+>
+> * [https://localhost:7155/swagger/index.html](https://localhost:7155/swagger/index.html)
 
 ---
 
