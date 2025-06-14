@@ -6,7 +6,7 @@ import { Button } from './ui/button';
 import { baseUrl } from '~/lib/constants';
 
 const PlantForm = ({ isEdit = false, id }: {isEdit?: boolean, id?: any}) => {
-    const [plant, setPlant] = useState({ plantName: "", wateringFrequencyInDays: "", lastWatered: "" });
+    const [plant, setPlant] = useState({ plantName: "", wateringFrequencyInDays: "", lastWatered: "", species: "" });
     const navigate = useNavigate();
   
     useEffect(() => {
@@ -38,6 +38,10 @@ const PlantForm = ({ isEdit = false, id }: {isEdit?: boolean, id?: any}) => {
           <div>
             <Label>Nom</Label>
             <Input value={plant.plantName} onChange={e => setPlant({ ...plant, plantName: e.target.value })} required />
+          </div>
+          <div>
+            <Label>Espèce</Label>
+            <Input value={plant.species} onChange={e => setPlant({ ...plant, species: e.target.value })} required />
           </div>
           <div>
             <Label>Fréquence d'arrosage (jours)</Label>
