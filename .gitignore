@@ -361,3 +361,11 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Front
+.DS_Store
+/node_modules/
+
+# React Router
+/.react-router/
+/build/
